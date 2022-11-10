@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: darkblue;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.nav-item {
+    position: fixed;
+    right: 10%;
+}
+
+#logo {
+    margin: 10px 30px;
+    width: 20%;
+}
+
+#logo img {
+    height: 50px;
+    width: 100%;
+    margin-left: 1.2rem;
+}
+
+.banner {
+    background-color: grey;
+    height: 300px;
+    border-bottom: 1px solid lightblue;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+#h-center {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding-top: 100px;
+}
+
+/* To use banner image uncomment this */
+/* #h-center {
+    text-align: center;
+    font-size: 4rem;
+    color: brown;
+    padding-top: 100px;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    opacity: .3;
+} */
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: white;
+}
+
+.previous, .next {
+    color: black;
+    font-size: 100px;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    right: 100px;
+    top: 150px;
+}
+
+.previous {
+    left: 100px;
+}
+
+.next {
+    right: 100px;
+}
+
+.content {
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 10%;
+}
+
+.sidebar {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 15px;
+}
+
+#box1 {
+    background-color: chocolate;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+#box2 {
+    background-color: antiquewhite;
+    position: relative;
+    width: 40%;
+    height: 60%;
+    left: -10%;
+    top: -90%;
+    z-index: -1;
+}
+
+.form-group {
+    background-color: orange;
+    height: 65%;
+    margin-bottom: 15px;
+}
+
+.form-input {
+    padding: 20px;
+    height: 70%;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 10px;
+}
+
+#skills {
+    padding: 0.5rem;
+}
+
+.btn {
+    width: 80px;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+
+input, #skills, .btn {
+    background-color: rgb(235, 172, 55);
+    border-color: whitesmoke;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.sub-content {
+    background-color: yellowgreen;
+    height: 35%;
+}
+
+.footer-class {
+    background-color: thistle;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    justify-content:space-around;
+}
+
+.footer-class ul {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-class ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.footer-class ul li a {
+    color: darkblue;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-class ul li a:hover {
+    color: white;
+}
+
+.vl {
+    border-right: 1px solid darkblue;
+}
